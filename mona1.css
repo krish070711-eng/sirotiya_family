@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-family: Georgia, serif;
+    background: linear-gradient(135deg, #6d1010, #240707);
+}
+
+.card {
+    width: 100%;
+    max-width: 440px;
+    padding: 12px;
+    background: #d4a64a;
+    border-radius: 8px;
+    box-shadow: 0 15px 45px #0008;
+    animation: appear 1s ease;
+}
+
+.card-inner {
+    text-align: center;
+    padding: 30px 20px;
+    border: 2px solid #d4a64a;
+    outline: 1px solid #d4a64a;
+    outline-offset: -8px;
+    background: #fff4d7;
+    color: #731717;
+}
+
+.om {
+    font-size: 45px;
+    color: #a51e17;
+    margin-bottom: 8px;
+}
+
+h3 {
+    font-size: 15px;
+    color: #80521c;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 36px;
+    margin: 12px 0;
+    color: #a51e17;
+}
+
+.subtitle {
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+.divider {
+    color: #bd8b28;
+    font-size: 23px;
+    margin: 15px 0;
+}
+
+.message {
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.details {
+    margin-top: 22px;
+    padding: 15px 8px;
+    border-top: 1px solid #d4a64a;
+    border-bottom: 1px solid #d4a64a;
+    line-height: 2;
+    font-size: 16px;
+}
+
+.family { margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+button {
+    margin-top: 23px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 25px;
+    background: #8d1717;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #bd8b28;
+    transform: scale(1.05);
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#invitee {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin: 20px 0;
+  font-size: 16px;
+}
+
+.invitee-line {
+  flex: 1;
+  min-width: 0;
+  padding: 4px 2px;
+  border: 0;
+  border-bottom: 1px solid #555;
+  outline: none;
+  background: transparent;
+  font: inherit;
+  text-align: center;
+}
+
+.invitee-line::placeholder {
+  color: #888;
+}
+
+#shareInvitation {
+    margin: 0 0 12px;
+}
+
+#shareStatus {
+    margin: 0 0 12px;
+    overflow-wrap: anywhere;
+    color: #731717;
+    font-size: 14px;
+}
+
+#shareStatus a {
+    color: #731717;
+}
+
+.invitee-name {
+    overflow-wrap: anywhere;
+}
